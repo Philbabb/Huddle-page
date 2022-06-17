@@ -34,10 +34,12 @@ button {
     padding: 20px 70px;
     border: none;
     border-radius: 50px;
+    transition: 0.5s;
 }
 
 button:hover {
     cursor: pointer;
+    padding: 30px 80px;
 }
 
 /* header */
@@ -46,6 +48,7 @@ header {
     background-image: url(img/bg-hero-desktop.svg);
     background-color: hsl(193, 100%, 96%);
     padding: 50px 0;
+    
 }
 
 header div {
@@ -110,6 +113,14 @@ header div {
 
 .hero-img {
     width: 100%;
+    transition: 0.5s;
+    text-align: center;
+    animation: myfirst 5s linear 2s infinite;
+}
+    
+@keyframes myfirst {
+    50%   {padding-left: 50px;}
+    100%  {padding: 0;}
 }
 
 .hero-btn {
